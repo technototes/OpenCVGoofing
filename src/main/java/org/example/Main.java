@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
         // This dumps the 'home' directory of the program
         System.out.println(System.getProperty("user.dir"));
-        OpenCV.loadShared();
+        OpenCV.loadLocally();
         Mat im = loadImage("sample.jpg");
         Mat hsv = new Mat();
         // To make this fast, we could actually do this line-by-line,
